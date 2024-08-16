@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="icon" type="image.jpg" href="https://i.imgur.com/CzMmRXv.png" referrerpolicy="no-referrer">
+  <link rel="icon" type="image.jpg" href="https://i.imgur.com/rrla6Kt.png" referrerpolicy="no-referrer">
 </head>
 
 <style>
@@ -59,7 +59,14 @@
     height: 325px;
     justify-content: space-evenly;
   }
-
+  .container4 {
+    display: flex;
+    border: 4px solid black;
+    position: relative;
+    flex-direction: row; 
+    align-items: flex-start;
+    height: 350px;
+  }
   .text-container {
     flex-grow: 1;
     justify-content: space-evenly;
@@ -126,7 +133,28 @@
     .middlehr {
       display: block;
     }
+     h2 {
+    font-family: "Special Elite", system-ui;
+    margin-left: 15px;
+    flex-grow: 1; 
   }
+  @media only screen and (max-width: 500px) {
+    .container3 {
+      height: 700px;
+    }
+  }
+  @media only screen and (max-width: 512px) {
+    .container4 {
+      height: 512px;
+    }
+
+  }
+  pre {
+      font-family: "Special Elite", system-ui;
+      margin-left: 15px;
+      flex-grow: 1; 
+  }
+
 </style>
 <header>
   <div class="container1">
@@ -162,10 +190,8 @@
       <h2> SEX: MALE</h2>
       <hr>
       <h2> OCCUPATION: COMPSCI STUDENT</h2>
-      
-      
     </div>
-    <div class="text-container2">
+    <div class="text-container">
       <hr class="middlehr">
       <h2> HAIR COLOR: BLACK</h2>
       <hr>
@@ -177,7 +203,13 @@
       <hr>
       <h2> LINKEDIN: <a href="https://www.linkedin.com/in/adam-naufal-824068286/">CLICK</a></h2>
     </div>
-  </div>
-</body>
-
+   </div>
+   <br><br><br><br>
+   <div class="container4">
+     <div class="text-container">
+        <h2 style="margin-left: 20px; "> DESCRIPTION: </h2>
+        <h2 style="text-indent: 4em; margin: 2px; margin-left: 20px;  margin-right: 20px; line-height: 1.3; text-align:justify">Adam Naufal. Majoring in computer science at IPB UNIVERSITY. Speaks two languages, English and Indonesian. Likes playing video games, reading fantasy novels, 
+          and has an interest in game developing. Hates fruits and vegetables. Zero experience with HTML and CSS. Bad at making websites. </h2>
+   </div>
+  </body>
 </html>
