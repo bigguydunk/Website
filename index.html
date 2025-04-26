@@ -13,6 +13,13 @@
 
 <style>
 
+    body, html {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
     
   .special-elite-regular {
     font-family: "Special Elite", system-ui;
@@ -84,14 +91,14 @@
 
   body {
     background-image: url('https://c1.wallpaperflare.com/path/955/426/445/paper-old-texture-parchment-f1deb45b9b12c58bd345ea7a3ac04984.jpg');
-    background-size: cover;
+    background-size: cover; /* Ensures the background covers the viewport */
     background-repeat: no-repeat; 
-    background-attachment: scroll;
-    margin: 0;
-    padding: 10px;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    background-attachment: scroll; /* Ensures the background moves with the scroll */
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Removes default padding */
+    height: auto; /* Allows the body to grow with content */
+    width: 100%; /* Ensures the body spans the full width */
+    overflow-x: hidden
   }
 
   hr { 
@@ -103,8 +110,7 @@
   }
   
   html {
-    height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden
   }
   @media only screen and (max-width: 666px){
     .container2 {
