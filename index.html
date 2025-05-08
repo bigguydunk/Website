@@ -28,6 +28,17 @@
     font-weight: 400;
     font-style: normal;
   }
+  .bottom-right-image {
+    position: absolute;
+    bottom: -20px; /* Adjust to control vertical overflow */
+    right: -20px; /* Adjust to control horizontal overflow */
+    width: 350px; /* Adjust size as needed */
+    height: auto;
+    z-index: 1; /* Ensure it appears above other elements */
+  }
+  .container4 {
+    position: relative; /* Needed for the absolute positioning of the image */
+  }
 
   #photo {
     height: 100%;
@@ -74,7 +85,7 @@
     position: relative;
     flex-direction: row; 
     align-items: flex-start;
-    height: 350px;
+    height: auto;
   }
   .text-container {
     flex-grow: 1;
@@ -223,7 +234,7 @@
     <img id="photo" src="https://i.imgur.com/hry6p0A.png" referrerpolicy="no-referrer">
     <div class="text-container" >
       <hr class="nondisplay">
-      <h2> NAME: [REDACTED]</h2>
+      <h2> NAME: N/A</h2>
       <hr>
       <h2> AGE: 19</h2>
       <hr>
@@ -251,18 +262,23 @@
       <hr>
       <h2> HAIR TYPE: STRAIGHT</h2>
       <hr>
-      <h2> CLUE 1: <a href="https://fakesnowy.itch.io/flower-fever">CLICK HERE</a></h2>
+      <h2> EYE COLOR: BROWN</h2>
       <hr>
-      <h2> CLUE 2: [REDACTED]</h2>
+      <h2> BLOOD TYPE: B</h2>
       <hr>
-      <h2> CLUE 3: [REDACTED]</h2>
+      <h2> ADDITIONAL INFO: WEARS ROUND-ISH GLASSES</h2>
+      <br>
     </div>
    </div>
    <br><br><br><br>
    <div class="container4">
-     <div class="text-container">
-        <h2 style="margin-left: 20px; "> DESCRIPTION: </h2>
-        <h2 style="text-indent: 4em; margin: 2px; margin-left: 20px;  margin-right: 20px; line-height: 1.3; text-align:justify">[REDACTED], a Computer Science major at IPB University, is bilingual in English and Indonesian. He enjoys playing video games, reading fantasy novels, and has a keen interest in game development. Currently, he is involved in the organization "IEEE" as a project staff member. His primary mode of transportation is a Honda Beat-type motorized two-wheeled vehicle, with one of its frontal illumination units functioning despite a fractured protective glass covering. He typically carries a sizeable gray backpack with orange accents as his main inventory container. His most frequently purchased meal is Ayam Geprek from the campus canteen, 'Golden Corner'.</h2>
-   </div>
+  <div class="text-container">
+    <h2 style="margin-left: 20px;">DESCRIPTION:</h2>
+    <h2 style="text-indent: 4em; margin: 2px; margin-left: 20px; margin-right: 20px; line-height: 1.3; text-align:justify">
+      Majors in Computer Science at IPB University. He is bilingual in English and Indonesian. He enjoys playing video games, reading fantasy novels, and has a keen interest in game development. Currently, he is involved in the organization "IEEE" as a project staff member. His primary mode of transportation is a Honda Beat-type motorized two-wheeled vehicle, with one of its frontal illumination units functioning despite a fractured protective glass covering. He typically carries a sizeable gray backpack with orange accents as his main inventory container. His most frequently purchased meal is Ayam Geprek from the campus canteen, 'Golden Corner' <br><br><br><br> 
+    </h2>
+  </div>
+  <img class="bottom-right-image" src="https://imgur.com/y5L83eA.png"  referrerpolicy="no-referrer">
+</div>
   </body>
 </html>
